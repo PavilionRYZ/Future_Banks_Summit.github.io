@@ -6,6 +6,10 @@ A modern, glassmorphic, fully responsive event website built with **React**, **T
 
 ***
 
+## Live Link 
+
+🌐 **Future Banks Summit 2023**: [futurebanksummit2023.netlify.app/](https://futurebanksummit2023.netlify.app/)  
+
 ## 🚀 Tech Stack
 
 - **Frontend:** React
