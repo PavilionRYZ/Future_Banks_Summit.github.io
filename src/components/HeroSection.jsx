@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Future from "../assets/Future-Banks-Summit-KSA-2023.png"
 
 const HeroSection = () => {
     const containerVariants = {
@@ -21,6 +22,30 @@ const HeroSection = () => {
             transition: { duration: 0.8, ease: 'easeOut' },
         },
     };
+
+    const logoVariants = {
+        hidden: {
+            opacity: 0,
+            scale: 0.9,
+            filter: 'blur(6px)',
+        },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            filter: 'blur(0px)',
+            transition: {
+                duration: 1.2,
+                ease: 'easeOut',
+            },
+        },
+    };
+
+    const logoHover = {
+        scale: 1.05,
+        transition: { duration: 0.3, ease: 'easeOut' },
+    };
+
+
 
     return (
         <section
@@ -48,11 +73,26 @@ const HeroSection = () => {
                 </motion.div>
 
                 {/* Main Heading */}
-                <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold mb-6">
+                {/* <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold mb-6">
                     <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                         Future Banks Summit 2023
                     </span>
-                </motion.h1>
+                </motion.h1> */}
+                {/* future logo */}
+                <motion.div
+                    variants={logoVariants}
+                    initial="hidden"
+                    animate="visible"
+                    whileHover={logoHover}
+                    className="flex justify-center mb-8 cursor-pointer"
+                >
+                    <img
+                        src={Future}
+                        alt="Future Banks Summit 2023 Logo"
+                        className="max-h-24 md:max-h-32 w-auto object-contain"
+                    />
+                </motion.div>
+
 
                 {/* Subheading */}
                 <motion.p
