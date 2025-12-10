@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Lightbulb, TrendingUp, Lock, DollarSign, Users, Globe } from 'lucide-react';
 

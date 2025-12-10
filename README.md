@@ -36,7 +36,9 @@ A modern, glassmorphic, fully responsive event website built with **React**, **T
 ```text
 src/
   components/
-    Navbar.jsx
+    layout/
+      Navbar.jsx
+      Footer.jsx
     HeroSection.jsx
     StatsSection.jsx
     AboutSection.jsx
@@ -45,8 +47,7 @@ src/
     AgendaSection.jsx
     SponsorsSection.jsx
     RegistrationForm.jsx
-    ContactSection.jsx
-    Footer.jsx
+    ContactSection.jsx   
   App.jsx
   main.jsx / index.jsx
   index.css
