@@ -21,7 +21,7 @@ function App() {
       <SpeakersSection />
       <AgendaSection />
       <SponsorsSection />
-      <RegistrationForm />
+      {/* <RegistrationForm /> */}
       <ContactSection />
       <Footer />
     </div>
